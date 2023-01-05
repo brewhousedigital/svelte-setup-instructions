@@ -59,4 +59,3 @@ indent_size = 2
 
 - [ ] [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [ ] [Bootstrap Icons](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-- [ ] 
