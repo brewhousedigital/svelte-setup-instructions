@@ -3,8 +3,14 @@ This is a list of steps to get a new SvelteKit project up and running using my n
 ## `package.json`
 
 - [ ] Swap out `"@sveltejs/adapter-auto"` for `"@sveltejs/adapter-netlify": "next",`
+- [ ] Add in new Script for `npm start`
+- [ ] Optional: Expose the Vite server on the network by adding `--host` to the scripts
+
+### Other `package.json` Things
+
 - [ ] Optional: [Add in Pocketbase](https://www.npmjs.com/package/pocketbase)
 - [ ] Optional: [Add in Slugify](https://www.npmjs.com/package/slugify)
+- [ ] Optional: [Add in DayJS](https://www.npmjs.com/package/dayjs)
 
 ## `svelte.config.js`
 
@@ -40,3 +46,17 @@ indent_size = 2
 ## Update `.gitignore`
 
 - [ ] `.idea`
+- [ ] `.netlify`
+
+
+## Webstorm Specific
+
+- [ ] Mark the `static` folder as the Resource Root
+- [ ] Run the dev and build commands then mark the output folders as Excluded Resources
+
+
+# Code Helpers
+
+- [ ] [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [ ] [Bootstrap Icons](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [ ] 
