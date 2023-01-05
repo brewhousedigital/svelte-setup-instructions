@@ -12,7 +12,7 @@ This is a list of steps to get a new SvelteKit project up and running using my n
 
 ## Create an `.editorconfig` file
 
-```toml
+```editorconfig
 # EditorConfig helps developers define and maintain consistent
 # coding styles between different editors and IDEs
 # editorconfig.org
