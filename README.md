@@ -12,7 +12,7 @@ This is a list of steps to get a new SvelteKit project up and running using my n
 
 ## Create an `.editorconfig` file
 
-```config
+```toml
 # EditorConfig helps developers define and maintain consistent
 # coding styles between different editors and IDEs
 # editorconfig.org
@@ -29,7 +29,7 @@ indent_style = space
 indent_size = 2
 ```
 
-## Create a `.netlify.toml` file
+## Create a `netlify.toml` file
 
 ```toml
 [build]
