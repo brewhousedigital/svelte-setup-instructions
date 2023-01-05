@@ -3,12 +3,8 @@ This is a list of steps to get a new SvelteKit project up and running using my n
 ## `package.json`
 
 - [ ] Swap out `"@sveltejs/adapter-auto"` for `"@sveltejs/adapter-netlify": "next",`
-- [ ] Optional: Add in Pocketbase and Slugify
-
-```json
-"pocketbase": "^0.7.1",
-"slugify": "^1.6.0"
-```
+- [ ] Optional: [Add in Pocketbase](https://www.npmjs.com/package/pocketbase)
+- [ ] Optional: [Add in Slugify](https://www.npmjs.com/package/slugify)
 
 ## `svelte.config.js`
 
