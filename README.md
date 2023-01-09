@@ -6,12 +6,6 @@ This is a list of steps to get a new SvelteKit project up and running using my n
 - [ ] Add in new Script for `npm start`
 - [ ] Optional: Expose the Vite server on the network by adding `--host` to the scripts
 
-### Other `package.json` Things
-
-- [ ] Optional: [Add in Pocketbase](https://www.npmjs.com/package/pocketbase)
-- [ ] Optional: [Add in Slugify](https://www.npmjs.com/package/slugify)
-- [ ] Optional: [Add in DayJS](https://www.npmjs.com/package/dayjs)
-
 ## `svelte.config.js`
 
 - [ ] Update the import to `import adapter from '@sveltejs/adapter-netlify';`
@@ -58,4 +52,10 @@ indent_size = 2
 # Code Helpers
 
 - [ ] [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-- [ ] [Bootstrap Icons](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [ ] [Bootstrap Icons](https://icons.getbootstrap.com/#install)
+
+### Run NPM Install
+
+- [ ] Optional: [Add in Pocketbase](https://www.npmjs.com/package/pocketbase)
+- [ ] Optional: [Add in Slugify](https://www.npmjs.com/package/slugify)
+- [ ] Optional: [Add in DayJS](https://www.npmjs.com/package/dayjs)
