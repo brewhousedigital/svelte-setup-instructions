@@ -51,7 +51,7 @@ indent_size = 2
 
 # Code Helpers
 
-- [ ] [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [ ] [Bootstrap](https://getbootstrap.com/)
 - [ ] [Bootstrap Icons](https://icons.getbootstrap.com/#install)
 
 ### Run NPM Install
