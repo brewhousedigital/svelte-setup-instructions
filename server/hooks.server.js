@@ -28,6 +28,13 @@ export const handle = async({ event, resolve }) => {
 // Example of how to read the cookies
 // Svelte has built-in methods for accessing cookies, but ideally this would use your authentication library's SDK instead
 const validateYourTokenHere = (cookies) => {
-  const currentToken = cookies.get("my-auth-token");
+  const currentToken = cookies.get("auth-token");
   return currentToken === "123;
+}
+
+
+// Example of setting a simple authentication token
+// The cookies value comes from the Hook event.cookies
+const setNewUserToken = (cookies) => {
+  cookies.set("auth-token", "123")
 }
