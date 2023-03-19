@@ -23,9 +23,11 @@ export const handle = async({ event, resolve }) => {
     // Check for the user's theme before sending it off
     transformPageChunk: ({html}) => {
       // Set default to dark if no cookie was found
-      const currentTheme = getThemeValue(cookies) ?? "dark";
+      const currentTheme = getThemeValue(cookies);
       
-      return html.replace(`data-bs-theme="dark"`, `data-bs-theme="${currentTheme}"`)
+      const newHTML = html.replace(`data-bs-theme="dark"`, `data-bs-theme="${currentTheme}"`)
+
+      return newHTML;
     }
   });
 
@@ -51,5 +53,13 @@ const setNewUserToken = (cookies) => {
 // Example of checking the user's theme value before rendering the UI
 // The cookies value comes from the Hook event.cookies
 const getThemeValue = (cookies) => {
-  return cookies.get("theme");
+  let themeCheck = cookies.get("theme");
+
+  // Make sure the cookie was found, if not, set it to dark
+  if(!themeCheck) {
+    themeCheck = "dark";
+    cookies.set("theme", themeCheck)
+  }
+
+  return themeCheck;
 }
