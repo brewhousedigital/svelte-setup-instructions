@@ -18,8 +18,16 @@ export const handle = async({ event, resolve }) => {
     }
   }
 
-  // Resolve as normal
-  const response = await resolve(event);
+  // Resolve returns the Page HTML, and also allows us to modify it further before being sent to the client
+  const response = await resolve(event, {
+    // Check for the user's theme before sending it off
+    transformPageChunk: ({html}) => {
+      // Set default to dark if no cookie was found
+      const currentTheme = getThemeValue(cookies) ?? "dark";
+      
+      return html.replace(`data-bs-theme="dark"`, `data-bs-theme="${currentTheme}"`)
+    }
+  });
 
   return response;
 }
@@ -29,7 +37,7 @@ export const handle = async({ event, resolve }) => {
 // Svelte has built-in methods for accessing cookies, but ideally this would use your authentication library's SDK instead
 const validateYourTokenHere = (cookies) => {
   const currentToken = cookies.get("auth-token");
-  return currentToken === "123;
+  return currentToken === "123";
 }
 
 
@@ -37,4 +45,11 @@ const validateYourTokenHere = (cookies) => {
 // The cookies value comes from the Hook event.cookies
 const setNewUserToken = (cookies) => {
   cookies.set("auth-token", "123")
+}
+
+
+// Example of checking the user's theme value before rendering the UI
+// The cookies value comes from the Hook event.cookies
+const getThemeValue = (cookies) => {
+  return cookies.get("theme");
 }
