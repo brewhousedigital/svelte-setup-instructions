@@ -368,6 +368,8 @@ There are several dated files in Confluence that need to be modified, consolidat
 
 ### Getting Started
 
+Clone the project and then run:
+
 ```bash
 npm install
 ```
